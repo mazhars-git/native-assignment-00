@@ -15,7 +15,6 @@ export default function Header() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: colors.blue,
         width: '100%',
         height: "100%",      
     },
