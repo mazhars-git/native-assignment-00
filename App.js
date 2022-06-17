@@ -1,4 +1,3 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import Header from './src/components/screens/header';
@@ -18,9 +17,5 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: colors.blue,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });

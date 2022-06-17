@@ -6,10 +6,7 @@ import { spaces } from '../theme/spaces'
 export default function Header() {
   return (
     <View style={styles.container}>
-        <View style={styles.headerImg}>
-            <Image style = {styles.img} source = {require('../../../image/icon.png')} />
-        </View>
-        
+        <Image style = {styles.img} source = {require('../../../image/logo.png')} />
     </View>
   )
 }
@@ -22,15 +19,10 @@ const styles = StyleSheet.create({
         width: '100%',
         height: "100%",      
     },
-    headerImg: {
-        padding: spaces[4],
-    },
     img:{
-        height: 50,
-        width: 50,
-        backgroundColor: colors.light,
-        margin: spaces[2],
-        borderRadius: 50,
-
+        height: 100,
+        width: 100,
+        padding: spaces[4],
+        marginBottom: 70,
     }
 })
