@@ -8,7 +8,7 @@ export default function Home() {
     <View style={styles.container}>
         <View style={styles.contentArea}>
             <Image style={{height: 100, width: 100, marginTop: 20}} source = {require('../../../image/logo-2.png')} />
-            <Text style={{fontSize: 30, marginBottom: 25}}>Non-Contact <br/> Deliveries</Text>
+            <Text style={{fontSize: 30, fontWeight: '500', marginBottom: 25, color: colors.text}}>Non-Contact <br/> Deliveries</Text>
             <Text style={{width: '80%', fontSize: 20, marginBottom: 25}}>When placing an order, select the option “Contactless delivery” and the courier will leave your order at the door.</Text>
         </View>
 
