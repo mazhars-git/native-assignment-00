@@ -12,7 +12,9 @@ export default function Home() {
             <Text style={{width: '80%', fontSize: 20, marginBottom: 25}}>When placing an order, select the option “Contactless delivery” and the courier will leave your order at the door.</Text>
         </View>
 
-        <Pressable style = {styles.btn}>
+        <Pressable onPress ={ () => {
+                
+            }} style = {styles.btn}>
             <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>Order Now</Text>
         </Pressable>
 
