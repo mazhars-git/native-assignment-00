@@ -6,6 +6,7 @@ import { Pressable } from 'react-native-web';
 export default function Home() {
   return (
     <View style={styles.container}>
+        
         <View style={styles.contentArea}>
             <Image style={{height: 100, width: 100, marginTop: 20}} source = {require('../../../image/logo-2.png')} />
             <Text style={{fontSize: 30, fontWeight: '500', marginBottom: 25, color: colors.text}}>Non-Contact <br/> Deliveries</Text>
@@ -13,7 +14,7 @@ export default function Home() {
         </View>
 
         <Pressable onPress ={ () => {
-                
+
             }} style = {styles.btn}>
             <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>Order Now</Text>
         </Pressable>
