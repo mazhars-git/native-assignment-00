@@ -2,8 +2,10 @@ import { View, Text, StyleSheet, Image, Pressable } from 'react-native'
 import React from 'react'
 import { colors } from './../theme/colors';
 import Header from './header';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Home() {
+    const navigation = useNavigation();
   return (
     <View style={styles.container}>
         <Header />
@@ -25,8 +27,9 @@ export default function Home() {
                 }}>When placing an order, select the option “Contactless delivery” and the courier will leave your order at the door.</Text>
             </View>
 
-            <Pressable onPress ={ () => {
-                }} style = {styles.btn}>
+            <Pressable onPress ={ () => 
+                { navigation.navigate("Item")}} 
+                style = {styles.btn}>
                 <Text style={{
                         color: 'white', 
                         fontSize: 20, 
