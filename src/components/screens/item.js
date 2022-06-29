@@ -1,4 +1,4 @@
-import { View, Text, ImageBackground, StyleSheet } from 'react-native'
+import { View, Text, ImageBackground, StyleSheet, Pressable } from 'react-native'
 import React from 'react'
 import { colors } from './../theme/colors';
 
@@ -6,7 +6,7 @@ export default function Item() {
   return (
     <View style= {styles.container}>
         <ImageBackground source={require("../../../image/bgpic.png")} 
-            style={{height: '80%', width: '100%'}}
+            style={{height: '120%', width: '100%'}}
             resizeMode="cover"
         />
         <View style={styles.itemContentBox}>
@@ -14,7 +14,12 @@ export default function Item() {
             <Text style={styles.title}>1.10 $/pice</Text>
             <Text style={styles.title}>~ 150 gr / price</Text>
             <Text style={styles.title}>Spain</Text>
-            <Text style={styles.title}>Lettuce is an annual plant of the daisy family, Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads, although it is also seen in other kinds of food, such as soups, sandwiches and wraps; it can also be grilled.</Text>
+            <Text style={styles.details}>Lettuce is an annual plant of the daisy family, Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads, although it is also seen in other kinds of food, such as soups, sandwiches and wraps; it can also be grilled.</Text>
+        </View>
+        <View>
+            <Pressable>
+                <Text style={styles.btn} >Add To Cart</Text>
+            </Pressable>
         </View>
     </View>
   )
@@ -30,6 +35,21 @@ const styles = StyleSheet.create({
         padding: 30,
 
     },
-    title: {},
-    container: {},
+    title: {
+        fontSize: 30,
+        fontWeight: 'bold',
+        marginBottom: 25,
+    },
+    details: {
+        fontSize: 20,
+        fontWeight: '200',
+        lineHeight: 25,
+    },
+    btn: {
+        backgroundColor: colors.green,
+        padding: 20,
+        margin: 20,
+        borderRadius: 5,
+        textAlign: 'center',
+    },
 })
