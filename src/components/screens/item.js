@@ -60,4 +60,8 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         textAlign: 'center',
     },
+    heart: {
+        backgroundColor: colors.white,
+        padding: 20,
+    }
 })
