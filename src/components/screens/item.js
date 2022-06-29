@@ -1,6 +1,7 @@
 import { View, Text, ImageBackground, StyleSheet, Pressable } from 'react-native'
 import React from 'react'
 import { colors } from './../theme/colors';
+import { AntDesign } from '@expo/vector-icons';
 
 export default function Item() {
   return (
@@ -16,7 +17,8 @@ export default function Item() {
             <Text style={styles.title}>Spain</Text>
             <Text style={styles.details}>Lettuce is an annual plant of the daisy family, Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads, although it is also seen in other kinds of food, such as soups, sandwiches and wraps; it can also be grilled.</Text>
         </View>
-        <View>
+        <View style={styles.btnBox}>
+            <AntDesign style={styles.heart} name="hearto" size={50} color="black" />
             <Pressable>
                 <Text style={styles.btn} >Add To Cart</Text>
             </Pressable>
@@ -33,7 +35,8 @@ const styles = StyleSheet.create({
     itemContentBox: {
         backgroundColor: colors.bg,
         padding: 30,
-
+        borderTopLeftRadius: 30,
+        borderTopRightRadius: 30,
     },
     title: {
         fontSize: 30,
@@ -44,6 +47,11 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: '200',
         lineHeight: 25,
+    },
+    btnBox: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center'
     },
     btn: {
         backgroundColor: colors.green,
