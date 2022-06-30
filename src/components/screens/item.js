@@ -63,6 +63,8 @@ const styles = StyleSheet.create({
         margin: 20,
         borderRadius: 5,
         textAlign: 'center',
+        fontWeight: 'bold',
+        color: 'white'
     },
     heart: {
         backgroundColor: colors.white,
@@ -70,5 +72,6 @@ const styles = StyleSheet.create({
         paddingVertical: 15,
         paddingHorizontal: 25,
         borderRadius: 5,
+        cursor: 'pointer',
     }
 })
