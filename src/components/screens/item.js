@@ -18,7 +18,10 @@ export default function Item() {
             <Text style={styles.details}>Lettuce is an annual plant of the daisy family, Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads, although it is also seen in other kinds of food, such as soups, sandwiches and wraps; it can also be grilled.</Text>
         </View>
         <View style={styles.btnBox}>
-            <AntDesign style={styles.heart} name="hearto" size={50} color="black" />
+            <View style={styles.heart}>
+                <AntDesign name="heart" size={20} color="black" />
+            </View>
+            
             <Pressable>
                 <Text style={styles.btn} >Add To Cart</Text>
             </Pressable>
@@ -50,11 +53,12 @@ const styles = StyleSheet.create({
     },
     btnBox: {
         flexDirection: 'row',
-        justifyContent: 'space-around',
+        justifyContent: 'space-evenly',
         alignItems: 'center'
     },
     btn: {
         backgroundColor: colors.green,
+        width: 300,
         padding: 20,
         margin: 20,
         borderRadius: 5,
@@ -62,6 +66,9 @@ const styles = StyleSheet.create({
     },
     heart: {
         backgroundColor: colors.white,
-        padding: 20,
+        borderWidth: 1,
+        paddingVertical: 15,
+        paddingHorizontal: 25,
+        borderRadius: 5,
     }
 })
